@@ -1,4 +1,5 @@
-export interface ReelSource { id: string; title: string; client: string; cloudinaryVideoPublicId: string; cloudinaryPosterPublicId?: string; previewTime?: number; duration: string; tags: string[]; niche: string; description: string; }\nexport interface Reel extends ReelSource { cloudVideoUrl: string; cloudPosterUrl: string; }
+export interface ReelSource { id: string; title: string; client: string; cloudinaryVideoPublicId: string; cloudinaryPosterPublicId?: string; previewTime?: number; duration: string; tags: string[]; niche: string; description: string; }
+export interface Reel extends ReelSource { cloudVideoUrl: string; cloudPosterUrl: string; }
 
 const CLOUDINARY_CLOUD_NAME = "dqbmflby5";
 const CLOUDINARY_VIDEO_TRANSFORM = "f_auto,q_auto:good,vc_auto,w_540,c_limit";
